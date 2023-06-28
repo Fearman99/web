@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quote of the decade</title>
+    
+
+<style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+    @keyframes animatemodel{
+        from{
+            bottom:1px;
+            opacity: 0; 
+        }
+        to{
+            bottom: 100%;
+            opacity: 1;
+        }
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+   
+    body{
+        font-family: 'poppins';
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: url('https://static.vecteezy.com/system/resources/previews/010/008/086/original/background-dimension-3d-graphic-message-board-for-text-and-message-design-line-shadow-for-modern-web-design-free-vector.jpg') no-repeat center / cover;
+        
+    }
+
+    #main{
+        border: 1px rgb(0, 0, 0) solid;
+        text-align: center;
+        padding: 30px;
+        box-shadow: 0 0 10px;
+        width: 60%;
+        animation-name: animatemodel;
+        animation-duration: 1s;
+    }
+
+    #container {
+        padding-bottom:40px;
+        font-weight: bolder;
+        font-size: 25px;
+        
+    }
+
+    #quote{
+        font-weight: bold;
+        font-style: oblique;
+        padding-bottom: 15px;
+        color: rgb(30, 28, 28);
+        font-size: 20px;
+    }
+
+    #person{
+        padding: 15px;
+        font-weight: bolder;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+
+    button{
+        padding:15px;
+        margin-top: 30px;
+        border-radius: 100px;
+        color: rgb(3, 3, 3);
+        font-weight: bolder;
+        background-color: bisque;
+        cursor: pointer;
+        box-shadow: black;
+        box-shadow: 0  5px rgba(201, 86, 28, 0.784);
+        transition: .4s;
+        animation-name: animatemodel;
+        animation-duration: 2s;
+    }
+    button:hover{
+        color: rgba(55, 71, 192, 0.407);
+        background-color: rgba(195, 72, 11, 0.303);
+        box-shadow: 0 0 10px;
+    }
+        
+</style>
+    
+</head>
+<body>
+    <div id="main">
+        <div id="container">
+            <h2>Qoute's Of the Decade</h2>
+        </div>
+        <div id="con1">
+            <div id="quote">
+                <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aliquam dolore cum labore magnam deserunt harum non earum. Corporis, id? "</p>
+            </div>
+            <div id="person">
+                <p>Mohandas Karamchand Gandhi</p>
+            </div>
+            <button id="bnt">Next Qoute</button>
+
+        </div>
+    </div>
+    <script>
+        let b = document.querySelector('#bnt')
+        let quote = document.querySelector('#quote')
+        let person =document.querySelector('#person')
+        console.log(b)
+
+        const arr = [{quote: 'No one is greater than ram ', person: 'Shivansh Tiwari'},
+        {quote: 'With Great Power omes Great Responsibility ', person: 'Ben parker'},
+        {quote: 'practice makes the man perfect', person: 'Unknown'}]
+        
+        
+
+        function random(){
+
+        let r = Math.floor(Math.random() * arr.length);
+        quote.innerHTML =arr[r].quote;
+        person.innerHTML=arr[r].person;
+        
+                        }
+                        b.addEventListener('click' , random)
+
+        
+
+        
+
+    </script>
+
+</body>
+
+</html>

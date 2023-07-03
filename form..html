@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEBBRA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            
+        }
+
+        #container1{
+            margin: 15px;
+            border: 1px rgb(25, 23, 23) solid;
+            padding: 20px;
+            
+        }
+        #con2{
+            margin: 60px;
+            font-weight: bolder;
+            font-size: large;
+            
+        }
+        #fs1{
+            padding: 20px;
+            margin: 50px;
+        }
+        #fs2{
+            padding: 20px;
+            margin: 50px;
+        }
+        #fs1 legend{
+            font-weight: bolder;
+            font-size: large;
+           
+            
+        }
+        #fs2 legend{
+            font-weight: bolder;
+            font-size: large;
+            
+
+        }
+        #html{
+            margin: 7px;
+        }
+        #css{
+            margin: 7px;
+        }
+        #js{
+            margin:7px;
+        }
+        #full{
+            margin: 13px;
+        }
+        #part{
+            margin: 13px;
+        }
+        #remote{
+            margin: 13px;
+        }
+        .ta{
+            margin-left: 50px;
+            font-weight: bold;
+            font-size: large;
+            margin-bottom: 40px;
+            margin-top: 11px;
+        }
+        #Comments{
+            width: 70%;
+            padding: 15px;
+            font-weight: lighter;
+            font-size: large;
+            height: 100px;
+        }
+        #nid{
+            margin-top: 10px;
+        }
+        #eid{
+            margin-top: 10px;
+        }
+        #pid{
+            margin-top: 10px;
+        }
+        #Resume{
+            margin-top: 13px;
+            
+            padding-top: 13px;
+            padding-bottom: 10px;
+            
+        }
+        #exp{
+            margin-top: 10px;
+            width: 175px;
+        }
+        #oid{
+            margin-top: 10px;
+            width: 175px;
+        }
+
+        button{
+            
+        padding:20px;
+        width: 94%;
+        margin-left: 50px;
+        font-size: large;
+        color: rgb(3, 3, 3);
+        font-weight: bolder;
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+        box-shadow: black;
+        box-shadow: 0  5px rgba(0, 0, 0, 0.784);
+        transition: .4s;
+        animation-name: animatemodel;
+        animation-duration: 2s;
+    }
+    button:hover{
+        color: rgba(0, 0, 0, 0.407);
+        background-color: rgba(0, 0, 0, 0.303);
+        box-shadow: 0 0 10px;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    
+        <div>
+            <h1>Event Registration</h1>
+        </div>
+    <div id="container1">
+        <div id="con2"><div>
+            <label for="nid">Name : </label><br>
+            <input type="text" name="fullname" placeholder="Fullname" id="nid">
+        </div><br>
+        <div>
+            <label for="eid">Email : </label><br>
+            <input type="email" name="Email@" id="eid">
+        </div><br>
+        <div>
+            <label for="pid">Phone : </label><br>
+            <input type="tel" name="Phone number" id="pid">
+        </div><br>
+        <div>
+            <label for="nid">Resume</label><br>
+            <input type="file" name="Resume" id="Resume">
+        </div><br>
+        <div>
+            <label for="nid">Experience</label><br>
+            <input type="number" name="exp" id="exp" min="0" max="100">
+        </div><br>
+        <div>
+            <label for="oid">Occpupation : </label><br>
+            <select name="Occpupation" id="oid">
+                <option value="engineer">dalal</option>
+                <option value="goverbment_emp">sarkari_nauker</option>
+                <option value="emp">corporate_ke_nauker</option>
+            </select>
+        </div></div>
+        <div>
+            <fieldset id="fs1">
+                <legend>Topic of Interest</legend>
+                <label class="lab" for="html">HTML</label>
+                <input type="checkbox" name="html" id="html" value="1"><br>
+                <label class="lab" for="css">CSS</label>
+                <input type="checkbox" name="css" id="css" value="1"><br>
+                <label class="lab" for="css">JS</label>
+                <input type="checkbox" name="js" id="js" value="1"><br>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset id="fs2">
+                <legend>Availibilty</legend>
+                <label class="lab"for="ful">Full Time</label>
+                <input type="radio" name="radio" id="ful" value="1"><br>
+                <label class="lab"for="part">Part Time</label>
+                <input type="radio" name="radio" id="part" value="1"><br>
+                <label class="lab"for="Remote">Remote</label>
+                <input type="radio" name="radio" id="Remote" value="1"><br>
+            </fieldset>
+        </div>
+        <div>
+            <label class="ta" for="Comments">Comments : </label><br>
+            <textarea id="Comments" class="ta" cols="100" rows="10"></textarea>
+        </div>
+        <div>
+            <button type="button">Summit</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
